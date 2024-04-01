@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Idade</title>
+    <style> 
+    
+    </style>
+</head>
+<body>
+
+    <input type="number" placeholder="Insira sua Idade">  
+    <input type="submit" value="Classificar" onclick="Classe()">
+
+
+    <script>
+        function Classe(){
+        var idd = document.querySelectorAll ('input')[0].value 
+
+        if(idd <= 10)
+        alert('o indivíduo é uma criança e não está em maioridade penal.')  
+        
+
+        if(idd == 11)
+        alert('O indivíduo é um pré adolescente e não está em maioridade penal.')
+        
+
+        if(idd >=12 && idd <=17)
+        alert('O indivíduo é um adolescente e não está em maioridade penal.')
+       
+
+        if(idd>= 18 && idd<=60)
+        alert('O indivíduo é um adulto e está em maioridade penal.')
+     
+
+        if(idd>60)
+        alert('O indivíduo é idoso e está em maioridade penal.')
+        
+        }
+    </script>
+</body>
+</html>

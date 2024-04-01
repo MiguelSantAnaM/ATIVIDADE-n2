@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GASOSA</title>
+</head>
+<body>
+
+<input type="number" placeholder="distância da viagem">
+<input type="number" placeholder="consumo (km/L)">
+<h1>Insira o tipo de combustível</h1>
+<input type="submit" value="Etanol" onclick="etanol()">
+<input type="submit" value="Gasolina" onclick="gasolina()">
+<script>
+    function etanol(){
+        
+        var dist = document.querySelectorAll('input')[0].value
+        var cons = document.querySelectorAll('input')[1].value
+        var calc = (dist/cons)*3.42
+        alert ('o consumo da viagem será de ' + calc)
+    }
+    function gasolina(){
+        
+        var dist = document.querySelectorAll('input')[0].value
+        var cons = document.querySelectorAll('input')[1].value
+        var calc1 = (dist/cons)*5.75
+        alert ('o consumo da viagem será de ' + calc1)
+    }
+        
+          
+
+
+
+    
+</script>
+</body>
+</html>
